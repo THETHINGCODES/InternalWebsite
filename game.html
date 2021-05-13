@@ -1,0 +1,54 @@
+<html>
+<head>
+    <link href="styles.css" type="text/css" rel=stylesheet>
+    </head>
+<title>
+    Esporty.com - Games
+    </title>
+    
+    <body>
+        <div class="navbar">
+            <div class="navitem">
+            <a href="index.html">Esporty.com</a>
+            </div>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">&#9776;
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="game.html">Games</a>
+    <a href="spec.html">Specs</a>
+    <a href="basic.html">The Basics</a>
+  </div>
+  </div> 
+</div>
+    <br>
+        <br>
+        <h1><b>Some games that are commonly used in Esports are:</b></h1>
+        
+        <h6> Here is a list of games to practice and get better at:</h6>
+        <ul>
+        <li>League of Legends</li>
+        <li>Rocket League</li>
+        <li>Space reserved for other games...</li>
+        </ul>
+  <img src="lol.png" style="width: 45%; height: 55%" class="right">
+
+        <script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+    </body>
+</html>

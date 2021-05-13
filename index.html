@@ -1,0 +1,50 @@
+<html>
+<head>
+    <link href="styles.css" type="text/css" rel=stylesheet>
+    </head>
+<title>
+    Esporty.com - Home
+    </title>
+    
+    <body>
+        <div class="navbar">
+            <div class="navitem">
+            <a href="index.html">Esporty.com</a>
+            </div>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">&#9776;
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="game.html">Games</a>
+    <a href="spec.html">Specs</a>
+    <a href="basic.html">The Basics</a>
+  </div>
+  </div> 
+</div>
+    <br>
+        <br>
+
+        <h1><b>Welcome to Esporty.com.</b></h1>
+        <h4> ...Where you'll find out all that you need to know about esports.</h4>
+        
+<img src="pc.png" style="width: 25%; height: 50%" class="center">
+        
+        <script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+    </body>
+</html>
