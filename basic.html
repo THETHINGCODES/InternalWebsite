@@ -1,0 +1,58 @@
+<html>
+<head>
+    <link href="styles.css" type="text/css" rel=stylesheet>
+    </head>
+<title>
+    Esporty.com - Basic Skills
+    </title>
+    
+    <body>
+  <div class="navbar">
+            <div class="navitem">
+            <a href="index.html">Esporty.com</a>
+            </div>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">&#9776;
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="game.html">Games</a>
+    <a href="spec.html">Specs</a>
+    <a href="basic.html">The Basics</a>
+  </div>
+  </div> 
+</div>
+    <br>
+        <br>
+        <h1><b>Skills that you need are: </b></h1>
+        
+     <h5 class="right">You will need quick reaction speeds, good hand to eye coordination, and fast responses.</h5>
+       
+  <img src="Gamer.png" style="width: 45%; height: 55%" class="left1">
+ <h1 class="center">WASD</h1>
+<img src="wasd.png" style="width: 40%; height: 55%" class="left1">
+   <h5 class="right">The WASD keys are the most commanly used keys in gaming; W = forward, A = left, S = backward, and D = right. These are the directions that you will move in if you press these buttons.</h5>     
+        <h1>Mouse</h1>
+        <h5 class="right">On every mouse, there are at least two buttons. Two main ones at least; the right click button and left click button. The right click button generally uses the object e.g. shoots; while the left click button will usually aim. </h5>
+        <img src="mous.png" class="left1">
+        
+        
+        
+        <script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+    </body>
+</html>
